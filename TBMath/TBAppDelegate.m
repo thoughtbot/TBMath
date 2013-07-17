@@ -7,6 +7,9 @@
 //
 
 #import "TBAppDelegate.h"
+#import "TBMatrix.h"
+#import "TBKalmanFilter.h"
+#import <Accelerate/Accelerate.h>
 
 @implementation TBAppDelegate
 
@@ -16,6 +19,44 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+/*
+
+    TBMatrix A = TBMatrixMakeIdentity(4, TBNumberTypeFloat, false);
+    printf("Identity(4)\n");
+    TBPrintMatrix(A, " %3.1f ");
+
+    mTB_sv(A, mTB_ij(2, 2), 2);
+    mTB_sv(A, mTB_ij(1, 2), 3);
+    mTB_sv(A, mTB_ij(3, 0), 4);
+    printf("A\n");
+    TBPrintMatrix(A, " %3.1f ");
+
+    TBMatrixInvert(&A);
+    printf("A^-1\n");
+    TBPrintMatrix(A, " %4.1f ");
+
+    TBMatrix x = TBMatrixMakeWithDimension(TBDimensionMake(4, 1), TBNumberTypeFloat, false);
+    for (NSInteger i = 0; i < 4; i++) {
+        mTB_sv(x, mTB_ij(i, 0), 3.0 - i);
+    }
+    printf("x\n");
+    TBPrintMatrix(x, " %.1f ");
+
+    TBMatrix b = TBMatrixByMultiplingMatricies(A, x);
+    b.autoRelease = false;
+    printf("b = A^-1 x\n");
+    TBPrintMatrix(b, " %4.1f ");
+
+    printf("Identity = A A^-1\n");
+    TBMatrix Id =TBMatrixByMultiplingMatricies(TBMatrixByInvertingMatrix(A), A);
+    TBPrintMatrix(Id, " %.1f ");
+
+    TBFreeMatrix(Id);
+    TBFreeMatrix(x);
+    TBFreeMatrix(b);
+    TBFreeMatrix(A);
+ */
+
     return YES;
 }
 
