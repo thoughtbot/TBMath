@@ -121,4 +121,7 @@ void TBPrintMatrixMathematica(TBMatrix matrix, const char *format);
 /** C = A*B*A^T */
 #define mTB_ABAT(A,B) mTB_mul(mTB_mul(A,B), mTB_tr(A))
 
+/** C = A*B^T */
+#define mTB_ABT(A,B) mTB_mul(A, mTB_tr(B))
+
 #endif

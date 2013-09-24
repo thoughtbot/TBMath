@@ -10,10 +10,6 @@
 		E46898E9178E80AB00A3D717 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46898E8178E80AB00A3D717 /* Foundation.framework */; };
 		E46898EB178E80AB00A3D717 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46898EA178E80AB00A3D717 /* CoreGraphics.framework */; };
 		E46898ED178E80AB00A3D717 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46898EC178E80AB00A3D717 /* UIKit.framework */; };
-		E46898F3178E80AB00A3D717 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46898F1178E80AB00A3D717 /* InfoPlist.strings */; };
-		E46898F5178E80AB00A3D717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E46898F4178E80AB00A3D717 /* main.m */; };
-		E46898F9178E80AB00A3D717 /* TBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E46898F8178E80AB00A3D717 /* TBAppDelegate.m */; };
-		E46898FB178E80AB00A3D717 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46898FA178E80AB00A3D717 /* Images.xcassets */; };
 		E4689902178E80AB00A3D717 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4689901178E80AB00A3D717 /* XCTest.framework */; };
 		E4689903178E80AB00A3D717 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46898E8178E80AB00A3D717 /* Foundation.framework */; };
 		E4689904178E80AB00A3D717 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46898EC178E80AB00A3D717 /* UIKit.framework */; };
@@ -44,13 +40,6 @@
 		E46898E8178E80AB00A3D717 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E46898EA178E80AB00A3D717 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E46898EC178E80AB00A3D717 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E46898F0178E80AB00A3D717 /* TBMath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TBMath-Info.plist"; sourceTree = "<group>"; };
-		E46898F2178E80AB00A3D717 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E46898F4178E80AB00A3D717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E46898F6178E80AB00A3D717 /* TBMath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBMath-Prefix.pch"; sourceTree = "<group>"; };
-		E46898F7178E80AB00A3D717 /* TBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBAppDelegate.h; sourceTree = "<group>"; };
-		E46898F8178E80AB00A3D717 /* TBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBAppDelegate.m; sourceTree = "<group>"; };
-		E46898FA178E80AB00A3D717 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E4689900178E80AB00A3D717 /* TBMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4689901178E80AB00A3D717 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E4689909178E80AB00A3D717 /* TBMathTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TBMathTests-Info.plist"; sourceTree = "<group>"; };
@@ -65,6 +54,7 @@
 		E47B656F17945E5A0033CC2D /* TBVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TBVector.h; path = Vector/TBVector.h; sourceTree = "<group>"; };
 		E47B657017945E6F0033CC2D /* TBVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBVector.m; path = Vector/TBVector.m; sourceTree = "<group>"; };
 		E47B657417945ECC0033CC2D /* TBEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TBEnums.h; path = Common/TBEnums.h; sourceTree = "<group>"; };
+		E4808D2017F1E8D6009735FC /* TBMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBMath.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,27 +116,13 @@
 		E46898EE178E80AB00A3D717 /* TBMath */ = {
 			isa = PBXGroup;
 			children = (
+				E4808D2017F1E8D6009735FC /* TBMath.h */,
 				E47B657317945EAE0033CC2D /* Common */,
 				E47B656A179084B40033CC2D /* Kalman Filter */,
 				E47B656E17945E310033CC2D /* Vector */,
 				E4689919178E80CD00A3D717 /* Matrix */,
-				E46898F7178E80AB00A3D717 /* TBAppDelegate.h */,
-				E46898F8178E80AB00A3D717 /* TBAppDelegate.m */,
-				E46898FA178E80AB00A3D717 /* Images.xcassets */,
-				E46898EF178E80AB00A3D717 /* Supporting Files */,
 			);
 			path = TBMath;
-			sourceTree = "<group>";
-		};
-		E46898EF178E80AB00A3D717 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E46898F0178E80AB00A3D717 /* TBMath-Info.plist */,
-				E46898F1178E80AB00A3D717 /* InfoPlist.strings */,
-				E46898F4178E80AB00A3D717 /* main.m */,
-				E46898F6178E80AB00A3D717 /* TBMath-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E4689907178E80AB00A3D717 /* TBMathTests */ = {
@@ -279,8 +255,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E46898F3178E80AB00A3D717 /* InfoPlist.strings in Resources */,
-				E46898FB178E80AB00A3D717 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,11 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E46898F9178E80AB00A3D717 /* TBAppDelegate.m in Sources */,
 				E47B657117945E6F0033CC2D /* TBVector.m in Sources */,
 				E47B656C179084C80033CC2D /* TBKalmanFilter.m in Sources */,
 				E468991B178E80F000A3D717 /* TBMatrix.m in Sources */,
-				E46898F5178E80AB00A3D717 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,14 +302,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E46898F1178E80AB00A3D717 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E46898F2178E80AB00A3D717 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		E468990A178E80AB00A3D717 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

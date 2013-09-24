@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E6E39381-B23A-475B-953C-2DE87C229441</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TBMath</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>87475A8E-4441-4F37-BB12-7DF40A5EA52E</key>
+		<string>ssh://github.com/theocalmes/TBMath.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TBMath.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>87475A8E-4441-4F37-BB12-7DF40A5EA52E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/theocalmes/TBMath.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>87475A8E-4441-4F37-BB12-7DF40A5EA52E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>87475A8E-4441-4F37-BB12-7DF40A5EA52E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TBMath</string>
+		</dict>
+	</array>
+</dict>
+</plist>
