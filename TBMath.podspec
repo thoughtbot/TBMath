@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 	s.name		= "TBMath"
-	s.version	= "0.0.1"
+	s.version	= "0.0.5"
 	s.summary 	= "Objective-C math library written on top of accelerate."
 	s.homepage	= "https://github.com/thoughtbot/TBMath.git"
 	s.license	= 'MIT'
 	s.author 	= {"Theodore Calmes" => "theo@thoughtbot.com"}
 	s.source    = { 
     	:git => "https://github.com/thoughtbot/TBMath.git",
-    	:tag => "0.0.4"
+    	:tag => "0.0.5"
   	}
   	s.source_files = 'TBMath/**/*.{m,h}'
 	s.requires_arc = true
