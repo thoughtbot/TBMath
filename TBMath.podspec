@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 	s.name		= "TBMath"
 	s.version	= "0.0.1"
 	s.summary 	= "Objective-C math library written on top of accelerate."
-	s.homepage	= "https://github.com/thoughtbot/TBMath.git"
+	s.homepage	= "git@github.com:thoughtbot/TBMath.git"
 	s.license	= 'MIT'
 	s.author 	= {"Theodore Calmes" => "theo@thoughtbot.com"}
 	s.source    = { 
