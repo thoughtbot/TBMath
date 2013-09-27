@@ -10,5 +10,6 @@
 #define TBMath_TBEnums_h
 
 typedef enum { TBNumberTypeFloat, TBNumberTypeDouble } TBNumberType;
+typedef union { float *floatArray; double *doubleArray; } TBNumberArray;
 
 #endif

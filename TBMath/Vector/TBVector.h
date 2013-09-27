@@ -11,18 +11,11 @@
 #ifndef TBMath_TBVector_h
 #define TBMath_TBVector_h
 
-typedef struct
-{
+typedef struct TBVector {
     int length;
-
     TBNumberType type;
-    union typeArray {
-        float *floatArray;
-        double *doubleArray;
-    } array;
-
+    TBNumberArray array;
     bool autoRelease;
-
 } TBVector;
 
 TBVector TBVectorMakeWithLength(int length, TBNumberType type, bool autoRelease);

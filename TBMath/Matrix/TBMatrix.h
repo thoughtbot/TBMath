@@ -40,18 +40,11 @@ TBDimension TBDimensionMake(unsigned int rows, unsigned int cols);
  
 */
 
-typedef struct TBMatrix
-{
+typedef struct TBMatrix {
     TBDimension dimension;
-
     TBNumberType type;
-    union typeArray {
-        float *floatArray;
-        double *doubleArray;
-    } array;
-
+    TBNumberArray array;
     bool autoRelease;
-
 } TBMatrix;
 
 #pragma mark - Set and get matrix elements
