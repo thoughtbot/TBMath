@@ -19,7 +19,6 @@ typedef struct
     TBMatrix R;
     TBMatrix A;
     TBMatrix H;
-    TBMatrix K;
     TBMatrix P;
     TBMatrix x;
 

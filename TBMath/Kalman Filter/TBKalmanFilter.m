@@ -15,7 +15,6 @@ void TBFreeKalmanFilter(TBKalmanFilter f)
     TBFreeMatrix(f.R);
     TBFreeMatrix(f.A);
     TBFreeMatrix(f.H);
-    TBFreeMatrix(f.K);
     TBFreeMatrix(f.P);
     TBFreeMatrix(f.x);
 }
